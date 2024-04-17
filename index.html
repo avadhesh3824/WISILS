@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mdb.min.css">
+      <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -37,7 +37,19 @@
         .carousel-inner{
             padding-top:20px;
         }
-       
+        table td {
+
+/*
+font-size: 20px;
+font-weight: 300;
+font-family: 'Trajan Pro Regular';
+font-style: normal;
+font-weight: normal;
+*/
+
+font-family: 'candara';
+font-size: 18px;
+} 
        
 /*     Go to top start */
 #topBtn {
@@ -63,15 +75,21 @@
       #topBtn {
         bottom: 10px;
         right: 10px;
-        font-size: 14px;
-
-
-        
+        font-size: 14px;  
       }
 /*      End code  */
         
-       
-               
+    @media only screen and max-width: 480px){
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x:hidden;
+        }
+    }   
+    
+   
     </style>
     
        
@@ -88,9 +106,9 @@
     <img src="img/IITH_header.png"class="img-thumbnail">
 </div>
     </div>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-secondary">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark my-primary">
         <div class="container">
-            <a class="navbar-brand animate " href="#">WiSILS-2024</a>
+            <a class="navbar-brand" href="#">WiSILS-2024</a>
 
             <!-- Toggle button for mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -149,12 +167,17 @@
                     <img src="img/slider/slider1.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
 
-                        <h5 class="bg-dark text-white opacity-75 p-3">"Exploring the Fusion of Light and Matter: Winter School on Intense Laser Science-2024"
+                        <h5 class="bg-dark text-white opacity-75 p-3">"Winter School on Intense Laser Science (WiSILS-2024): Unraveling the Frontiers of Laser-Driven Phenomena"
                         </h5>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/slider/slider2.png" class="d-block w-100" alt="..." >
+                    <div class="carousel-caption d-none d-md-block">
+
+<h5 class="bg-dark text-white opacity-75 p-3">"WiSILS-2024:Unlocking the Mysteries of Extreme Laser Intensities"
+</h5>
+</div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/slider/slider3.png" class="d-block w-100" alt="...">
@@ -180,9 +203,12 @@
     <div class="container p-4 ">
             <div class="row">
             <div class="col-md-12">
+                <marquee width="100%" behavior="scroll" bgcolor="pink">  
+                    <i class="fa fa-bell" aria-hidden="true"></i> Limited seats available. Visit our website for registration details and application guidelines.  
+</marquee>
                 <h3 class="my-4 text-center ">Objectives of <span class="myColor"> WiSILS-2024
 </h3>
-             <p class="text-center"> The aim of this School is to introduce undergraduate/graduate students to the exciting field of ultra-short, ultra-intense Laser-Matter interaction ...</p>
+             <p class="text-center" style="font-family: Candara, sans-serif; font-size:18px;"> Embark on a transformative journey into the cutting-edge realm of Intense Laser Science at our Winter School. This comprehensive program delves into High to Ultra-high Laser Intensity Science, exploring its diverse applications across multiple disciplines. Participants will immerse themselves in <b class="test" style="font-weight: 900;">Attosecond Science, High Harmonic Generation, Laser-Driven Particle Acceleration, Ultrafast Plasma Dynamics, and Computational Plasma Physics.</b></p>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
@@ -203,16 +229,33 @@
            
 
             <div class="col-md-12">
-               <ul>
-                <li>High to Ultra-high Laser Intensity Science</li>
-                <li>Attosecond Science and High Harmonic Generation</li>
-                <li>Laser-Driven Particle Acceleration</li>
-                <li>Ultrafast Plasma Dynamics</li>
-                <li>Computational Plasma Physics</li>
+               <ul class="test" style="text-align: justify;font-family: Candara, sans-serif; font-size:18px;line-height:1.5">
+                <li><b class="test" style="font-weight: 900">High to Ultra-high Laser Intensity Science:</b> Understand the principles and applications of lasers operating at extreme intensities, revolutionizing fields from materials science to nuclear physics.</li>
+                <li><b class="test" style="font-weight: 900">Science and High Harmonic Generation:</b> With the Nobel prize winning research, we will delve into the fascinating world of attosecond physics, enabling the investigation of ultrafast electronic processes at an unprecedented timescale. </li>
+                <li><b class="test" style="font-weight: 900">Laser-Driven Particle Acceleration:</b> Laser-Driven Particle Acceleration: Explore the forefront of accelerator technology, harnessing intense laser pulses to propel particles to astounding speeds, with implications for medicine, industry, and fundamental physics.</li>
+                <li><b class="test" style="font-weight: 900">Ultrafast Plasma Dynamics:</b> Ultrafast Plasma Dynamics: Unravel the complex behavior of plasmas under extreme conditions, unlocking insights into astrophysical phenomena and advanced fusion energy concepts.</li>
+                <li><b class="test" style="font-weight: 900">Computational Plasma Physics:</b> Master the computational tools that underpin our understanding of plasma interactions, enabling accurate simulations of laser-plasma interactions.</li>
 </ul>
            </div>
          
         </div>
+
+        <div class="container my-4">
+            <h3 class="my-4 text-center">Highlights</h3>
+           
+
+            <div class="col-md-12">
+               <ul class="test" style="font-family: Candara, sans-serif; font-size:18px;line-height:1.5">
+                <li><b class="test"style="font-weight: 900">World-Class Faculty:</b> Learn from leading experts, pioneers in their respective fields, who have shaped the landscape of Intense Laser Science.</li>
+                <li><b class="test" style="font-weight: 900">Hands-On Workshops:</b> Engage in practical sessions, gaining valuable experience in computation, numerical simulations, and data analysis. </li>
+                <li><b class="test" style="font-weight: 900">Interdisciplinary Networking:</b> Foster collaborations with fellow participants from diverse backgrounds, forging connections that transcend disciplinary boundaries.</li>
+                <li><b class="test" style="font-weight: 900">Dates and Venue:</b> 9th to 14th Dec 2024, Indian Institute of Technology-Jodhpur</li>
+<li><b class="test" style="font-weight: 900">Note:</b> Limited seats available. Visit our website for registration details and application guidelines.</li>
+</ul>
+           </div>
+         
+        </div>
+
     </div>
     <!--About University-->
     <section id="about" class="about ">
@@ -227,7 +270,7 @@
             <!-- Right side (about institute) -->
             <div class="col-md-6 ">
 
-                <p class="justify" ><strong class="text-dark">Indian Institute of Technology Jodhpur</strong> was established in 2008, to foster technology education and research in India. The Institute is committed to technological thought and action to benefit the economic development of India. Scholarship in teaching and learning; Scholarship in research and creative accomplishments; and relevance to Industry are three driving forces for us at IIT Jodhpur.
+                <p class="test" style="text-align: justify;font-family: Candara, sans-serif; font-size:18px;"><b class="test" style="font-weight: 900">Indian Institute of Technology Jodhpur</b> was established in 2008,to foster technology education and research in India. The Institute is committed to technological thought and action to benefit the economic development of India. Scholarship in teaching and learning; Scholarship in research and creative accomplishments; and relevance to Industry are three driving forces for us at IIT Jodhpur.
                     IIT Jodhpur functions from its sprawling residential Permanent Campus of 852 acres on National Highway 65, north-northwest of Jodhpur towards Nagaur. This campus is meticulously planned and envisioned to stand as a symbol of academics – simple, but deep.
                     The Institute is committed to multidisciplinary approach of technology development. Hence, it has established state-of-the-art laboratories for basic research, and has organised its academic degree activities through Departments and its coordinated research through Centers for Technologies.</p>
                 </p>
@@ -244,11 +287,11 @@
       <table class="table table-bordered text-center">
           
                           <td>Registration starts on:  </td>
-              <td>01/12/2023</td>
+              <td>XX/XX/2024</td>
             </tr>
             <tr>
                 <td>Scheduled date for school:</td>
-                <td> 02/02/2024 to 06/02/2024</td>
+                <td> 09/12/2024 to 14/12/2024</td>
               </tr>
     </table> 
   </div>
@@ -333,7 +376,7 @@
                                         <div class="modal-body">
                                             <img src="img/faculties/M.png" class="img-thumbnail"
                                                 style="margin-left: auto;margin-right: auto;display: block;" />
-                                            <p class="justify"><b>Abstract Title:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <p class="justify" style="text-align: justify;font-family: Candara, sans-serif; font-size:18px;"><b>Abstract Title:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-light"
@@ -375,7 +418,7 @@
                                         <div class="modal-body">
                                             <img src="img/faculties/M.png" class="img-thumbnail"
                                                 style="margin-left: auto;margin-right: auto;display: block;" />
-                                            <p class="justify"><b>Abstract Title:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <p class="justify" style="text-align: justify;font-family: Candara, sans-serif; font-size:18px;"><b>Abstract Title:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </p>
                                         </div>
                                         <div class="modal-footer">
@@ -413,7 +456,7 @@
                                         <div class="modal-body">
                                             <img src="img/faculties/F.png" class="img-thumbnail"
                                                 style="margin-left: auto;margin-right: auto;display: block;" />
-                                            <p class="justify"><b> Abstract Title</b>: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio doloribus, voluptate animi accusantium rerum nesciunt nobis, quisquam eveniet alias laborum cum numquam consequuntur minus quasi dolore odit perspiciatis, ullam unde.</p>
+                                            <p class="justify" style="text-align: justify;font-family: Candara, sans-serif; font-size:18px;"><b> Abstract Title</b>: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio doloribus, voluptate animi accusantium rerum nesciunt nobis, quisquam eveniet alias laborum cum numquam consequuntur minus quasi dolore odit perspiciatis, ullam unde.</p>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-light"
@@ -448,7 +491,7 @@
                                         <div class="modal-body">
                                             <img src="img/faculties/M.png" class="img-thumbnail"
                                                 style="margin-left: auto;margin-right: auto;display: block;" />
-                                           <p class="justify"><b>Abstract Title:</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio doloribus, voluptate animi accusantium rerum nesciunt nobis, quisquam eveniet alias laborum cum numquam consequuntur minus quasi dolore odit perspiciatis, ullam unde.</p>
+                                           <p class="justify" style="text-align: justify;font-family: Candara, sans-serif; font-size:18px;"><b>Abstract Title:</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio doloribus, voluptate animi accusantium rerum nesciunt nobis, quisquam eveniet alias laborum cum numquam consequuntur minus quasi dolore odit perspiciatis, ullam unde.</p>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-light"
@@ -627,7 +670,7 @@
     <h3 class="my-4 text-center" > <span class="myColor">Accommodation</span></h3>
     <div class="container p-4">
 
-        <p class="justify">The accommodation of all the plenary/invited speakers will be provided in the IIT Jodhpur Guest House. Other delegates will be accommodated in student hostels within campus. However, participants may also choose to stay  off-campus guest houses/hotels at their own cost.</p> 
+        <p class="justify" style="text-align: justify;font-family: Candara, sans-serif; font-size:18px;">The accommodation of all the plenary/invited speakers will be provided in the IIT Jodhpur Guest House. Other delegates will be accommodated in student hostels within campus. However, participants may also choose to stay  off-campus guest houses/hotels at their own cost.</p> 
         
 </div>
   </div>
@@ -683,7 +726,7 @@
     <div class="container-fluid p-5" style="background-image: linear-gradient(to top, #acc6ee, #91d6f1, #8ce3e2, #aaebc7, #daedaf);">
         <div class="container my-4 text-dark">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" style="text-align: justify;font-family: Candara, sans-serif; font-size:18px;">
                     <img src="img/IITJ_final_1.png" />
                     <h4 class="mt-3">Contact us</h4>
                     <p class="justify fw-bold"> Dr. Vandana Sharma</p>
