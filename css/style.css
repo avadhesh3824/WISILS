@@ -17,9 +17,14 @@ font-family: 'TrajanProRegular,serif';
 }
 
 .btn-primary{
-  font-family: 'Candara;
-  
+  font-family: 'Candara; 
 }
+
+/* .nav-item{
+  font-family: 'Trajan Pro Regular';
+  font-size:40px;
+  padding-right:-30px;
+} */
 
 
 

@@ -53,6 +53,12 @@ font-size: 19px;
             font-style:normal;
             font-weight: normal;
         }
+
+        .navbar .nav-item{
+  font-family: 'Trajan Pro Regular';
+  
+  padding-right:18px;
+}
 /*     Go to top start */
 #topBtn {
      display: none;
@@ -163,7 +169,7 @@ font-size:22px !important;
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark my-primary">
         <div class="container">
             <a class="navbar-brand" href="#" style="
-            font-family: 'Trajan Pro Regular';font-size: 23px;">WiSILS-2024</a>
+            font-family: 'Trajan Pro Regular';font-size: 25px;"></a>
 
             <!-- Toggle button for mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -172,11 +178,14 @@ font-size:22px !important;
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-end"" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                      <li class="nav-item">
-                        <a class="nav-link active" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home </a>
+                        <a class="nav-link active" href="#"><i class="fa fa-home" aria-hidden="true"></i> </a>
                     </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#keythemes">Key Themes</a>
+                        </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About Institute</a>
                     </li>
@@ -184,7 +193,7 @@ font-size:22px !important;
                         <a class="nav-link" href="#keydate">Key Dates</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#announcement">Announcement</a>
+                        <a class="nav-link" href="#registration">Registration</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Colloquium">Speakers</a>
@@ -274,7 +283,8 @@ font-size:22px !important;
                 <marquee class ="msize" onmouseover="stop()" onmouseout="start()" width="100%" behavior="scroll" bgcolor="pink" style="font-size: 20px;font-family:candara"> <i class="fa fa-university" aria-hidden="true"></i> Laser Plasma Research Facilities in India: 
 <a href="https://www.tifr.res.in/~uphill/" target="_blank">TIFR Mumbai</a> | 
 <a href="https://www.iith.ac.in/" target="_blank">IIT Hyderabad</a> | 
-<a href="https://www.tifrh.res.in/" target="_blank">TIFR Hyderabad</a>.      
+<a href="https://www.tifrh.res.in/" target="_blank">TIFR Hyderabad</a> | 
+<a href="https://www.tifrh.res.in/" target="_blank">RRCAT Indore</a>    
 </marquee>
                
 
@@ -295,7 +305,9 @@ font-size:22px !important;
 
     </div>
   
-    <div class="container-fluid p-4" style="background-color: #f7f7f7 !important;">
+    <!--Key Themes -->
+    <section id="keythemes" class="about">
+    <div class="container-fluid p-5" style="background-color: #f7f7f7 !important;">
         <div class="container my-4">
             <h3 class="my-4 text-center Heading" style="font-family: TrajanProRegular,serif; font-size:28px;"><i>Key Themes of the <span class="myColor">School</i></h3>
            
@@ -324,18 +336,18 @@ font-size:22px !important;
 <li><b class="test" style="font-weight: 900">Note:</b> Limited seats available. Visit our website for registration details and application guidelines.</li>
 </ul>
            </div>
-         
         </div>
 
     </div>
+</section>
     <!--About University-->
     <section id="about" class="about ">
     <div class="container p-5 ">
-        <h3 class="my-4 text-center Heading"style="font-family: TrajanProRegular,serif; font-size:28px;"><i>About <span class="myColor">Institute</span></i></h3>
+        <h3 class="my-4 text-center Heading"style="font-family: TrajanProRegular,serif; font-size:28px;padding-bottom:30px;"><i>About <span class="myColor">Institute</span></i></h3>
         <div class="row">
             <!-- Left side (image) -->
             <div class="col-md-6 about--part1">
-                <img src="img/IITJ1.jpg" class="img-thumbnail" alt="Institute Image">
+                <img src="img/IITJ1.jpg" class="img-thumbnail" alt="Institute Image" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;">
             </div>
     
             <!-- Right side (about institute) -->
@@ -345,7 +357,6 @@ font-size:22px !important;
                     IIT Jodhpur functions from its sprawling residential Permanent Campus of 852 acres on National Highway 65, north-northwest of Jodhpur towards Nagaur. This campus is meticulously planned and envisioned to stand as a symbol of academics – simple, but deep.
                     The Institute is committed to multidisciplinary approach of technology development. Hence, it has established state-of-the-art laboratories for basic research, and has organised its academic degree activities through Departments and its coordinated research through Centers for Technologies.</p>
                 </p>
-                   
         </div>
     </div>
     </section>
@@ -353,10 +364,9 @@ font-size:22px !important;
 <!-- Key dates -->
 <section id="keydate" class="keydate"></section>
 <div class="container-fluid p-5 " style="background-color: #f7f7f7 !important;">
-    <h3 class="my-4 text-center Heading" style="font-family: TrajanProRegular,serif; font-size:28px;"><i>Important <span class="myColor">Keydates</span></i></h3>
+    <h3 class="my-4 text-center Heading" style="font-family: TrajanProRegular,serif; font-size:28px;"><i>Important Keydates</h3>
     <div class="container p-4">
       <table class="table table-bordered text-center">
-          
                           <td>Registration starts on:  </td>
               <td>XX/XX/2024</td>
             </tr>
@@ -371,15 +381,15 @@ font-size:22px !important;
 
 
 <!-- Important Announcement  -->
-<section id="announcement" class="announcement">
+<section id="registration" class="announcement">
 <div class="container p-5">
-    <h3 class="my-4 text-center Heading"style="font-family: TrajanProRegular,serif; font-size:28px;"><i>Important<span class="myColor"> Announcement <i class="fa fa-bullhorn" aria-hidden="true"></i></span></i></h3>
-      <table class="table table-bordered text-center">
+    <h3 class="my-4 text-center Heading"style="font-family: TrajanProRegular,serif; font-size:28px;"><i>Registration<span class="myColor"></span></i></h3>
+      <table class="table table-bordered text-center" style="margin-top:50px;">
           
                     
           <tr>
             <td>Registration Link </td>
-            <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSfsOBN27-HENKd6gj0N4QWH1_ghw0Qox9PInLlaJs0ElunI2A/viewform" target="_blank"><button type="button" class="btn btn-primary     btn-sm">Registration</button></a></td>
+            <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSfsOBN27-HENKd6gj0N4QWH1_ghw0Qox9PInLlaJs0ElunI2A/viewform" target="_blank"><button type="button" class="btn btn-primary     btn-md">SUBMISSION</button></a></td>
           </tr>
      
             <tr>
@@ -423,7 +433,7 @@ font-size:22px !important;
         <div class="container my-4">
             <div class="row">
                 <div class="col-md-12 text-center p-5">
-                    <h3 class="test Heading" style="font-family: TrajanProRegular,serif; font-size:28px;"><i>Colloquium <span class="myColor"> Speakers</span> </i></h3>
+                    <h3 class="test Heading" style="font-family: TrajanProRegular,serif; font-size:28px;"><i>Colloquium  Speakers</h3>
                     
                 </div>
             </div>
@@ -463,14 +473,9 @@ font-size:22px !important;
 <!-- organizers details code -->
 <section id="committee" class="committee">
 <div class="container-fluid p-5">
-  <h3 class="my-4 text-center Heading" style="font-family: TrajanProRegular,serif; font-size:28px;"> <span class="myColor"><i> [Committee]</span></i></h3>
+  <h3 class="my-4 text-center Heading" style="font-family: TrajanProRegular,serif; font-size:28px;" >  [Committee]</h3>
 
-  <div class="container p-4">
-    
-    
-    
-    
-    
+  <div class="container p-4" style="margin-top:-45px;">
     <h5 class="my-4 text-center Heading1" style="font-family: TrajanProRegular,serif; font-size:22px;"> School Programme Committee</h5>
     <table class="table table-bordered text-center">
      <tr>
@@ -640,8 +645,8 @@ font-size:22px !important;
 
 <!--Accommodation section  -->
 <section id="venue" class="about"></section>
-<div class="container-fluid p-5" style="background-color: #f7f7f7 !important;">
-    <h3 class="my-4 text-center Heading" style="font-family: TrajanProRegular,serif; font-size:28px;"><i> Venue<span class="myColor"> Place</span></i></h3>
+<div class="container-fluid p-3" style="background-color: #f7f7f7 !important;">
+    <h3 class="my-4 text-center Heading" style="font-family: TrajanProRegular,serif; font-size:28px;padding-top:35px;"><i> Venue Place</h3>
     <div class="container p-4">
 
         <p class="justify subcon" style="text-align: justify;font-family: Candara, sans-serif; font-size:19px;">The accommodation of all the plenary/invited speakers will be provided in the IIT Jodhpur Guest House. Other delegates will be accommodated in student hostels within campus. However, participants may also choose to stay  off-campus guest houses/hotels at their own cost.</p> 
@@ -653,8 +658,8 @@ font-size:22px !important;
 
    
     <!--Sponsors-->
-    <div class="container p-5 my-5">
-        <h3 class="text-center Heading" style="font-family: TrajanProRegular,serif; font-size:28px;"><i>Our <span class="myColor">Colloborator & Sponsors</span></i></h3>
+    <div class="container m-5">
+        <h3 class="text-center Heading" style="font-family: TrajanProRegular,serif; font-size:28px;"><i>Our Colloborator & Sponsors</i></h3>
         <div id="carouselPlacement" class="carousel slide" data-bs-interval="1500" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
